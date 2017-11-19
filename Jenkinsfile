@@ -30,4 +30,12 @@ pipeline {
 			}
 		}
 	}
+	post {
+		always {
+			echo "Always executed"
+		}
+		failure {
+			echo "Executed on failure !"
+		}
+	}
 }
