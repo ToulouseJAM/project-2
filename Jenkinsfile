@@ -18,7 +18,7 @@ pipeline {
 				stage('integration-test') {
 					agent { label "build" }
 					steps {
-						sh "make integration"
+						sh "make integration-test"
 					}
 				}
 				stage('acceptance-test') {
